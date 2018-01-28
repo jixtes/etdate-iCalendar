@@ -1,0 +1,28 @@
+{
+  "name": "etdate",
+  "version": "1.0.0",
+  "description": "Ethiopian calendar ics file creator",
+  "main": "export.js",
+  "dependencies": {
+    "ethiopian-date": "^0.0.6",
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node export.js 2015-01-01 2020-01-01"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jixtes/etdate-iCalendar.git"
+  },
+  "keywords": [
+    "etdate",
+    "iCalendar",
+    "ics"
+  ],
+  "author": "jixtes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jixtes/etdate-iCalendar/issues"
+  },
+  "homepage": "https://github.com/jixtes/etdate-iCalendar#readme"
+}
