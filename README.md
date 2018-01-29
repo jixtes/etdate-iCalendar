@@ -1,2 +1,2 @@
 # etdate-iCalendar
-etdate .ics creator
+etdate .ics exporter
