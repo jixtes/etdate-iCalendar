@@ -1,2 +1,2 @@
 # etdate-iCalendar
-etdate .ics exporter
+etdate .ics [.ics](https://en.wikipedia.org/wiki/ICalendar) exporter
