@@ -7,8 +7,8 @@ const header = 'BEGIN:VCALENDAR'+
     '\r\nNAME:ETDate'+
     '\r\nX-WR-CALNAME:ETDate'+
     '\r\nX-WR-TIMEZONE:Africa/Nairobi'+
-    '\r\nSUMMARY:Ethiopian date as events'+
-    '\r\nDESCRIPTION:Ethiopian date as events'+
+    '\r\nSUMMARY:Ethiopian date iCalendar feed'+
+    '\r\nDESCRIPTION:Ethiopian date iCalendar feed'+
     '\r\nX-WR-CALDESC:Ethiopian date as events'+
     '\r\nCOLOR:255:255:255';
 
