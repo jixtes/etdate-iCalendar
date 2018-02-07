@@ -59,6 +59,6 @@ for (var i = 0; i <= number_of_days; i++) {
 
   date1.setDate(date1.getDate()+1)
 }
-fs.appendFile('etcal.ics','\r\nEND:VCALENDAR', function (err) {
+fs.appendFile('etdate.ics','\r\nEND:VCALENDAR', function (err) {
   if (err) throw err;
 });
