@@ -14,13 +14,13 @@ Add the following the URL as calendar subscription to get the dates' event feed.
 ## Apple calendar
 <img src="https://raw.githubusercontent.com/jixtes/etdate-iCalendar/master/shots/2.png" width="550">
 
-### Precaution
+### ⚠️ Precaution
 - Avoid ‘importing’ the ics file but instead add the event as shown above (yes there is a difference between importing and subscribing to a calendar feed using URL)
 - Apple’s iCalendar force a default alert notification which creates inconvenience so make sure to either turnoff the alert 
 
 
-### etdate export [ics](https://en.wikipedia.org/wiki/ICalendar) 
-To generate and export event dates between a specific range of dates (from_date - to_date)
+### etdate exporter [ics](https://en.wikipedia.org/wiki/ICalendar) 
+To generate and export your own iCalendar file between a specific range of dates (from_date - to_date)
 
 ```npm install```
 
