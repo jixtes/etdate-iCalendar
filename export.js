@@ -4,8 +4,13 @@ const header = 'BEGIN:VCALENDAR'+
     '\r\nVERSION:2.0'+
     '\r\nCALSCALE:GREGORIAN'+
     '\r\nMETHOD:PUBLISH'+
+    '\r\nNAME:ETDate'+
     '\r\nX-WR-CALNAME:ETDate'+
-    '\r\nX-WR-TIMEZONE:Africa/Nairobi';
+    '\r\nX-WR-TIMEZONE:Africa/Nairobi'+
+    '\r\nSUMMARY:Ethiopian date as events'+
+    '\r\nDESCRIPTION:Ethiopian date as events'+
+    '\r\nX-WR-CALDESC:Ethiopian date as events'+
+    '\r\nCOLOR:255:255:255';
 
 fs.writeFile('etdate.ics',header, function (err) {
   if (err) throw err;
