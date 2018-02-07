@@ -4,8 +4,8 @@ const header = 'BEGIN:VCALENDAR'+
     '\r\nVERSION:2.0'+
     '\r\nCALSCALE:GREGORIAN'+
     '\r\nMETHOD:PUBLISH'+
-    '\r\nNAME:ETDate'+
-    '\r\nX-WR-CALNAME:ETDate'+
+    '\r\nNAME:ETdate'+
+    '\r\nX-WR-CALNAME:ETdate'+
     '\r\nX-WR-TIMEZONE:Africa/Nairobi'+
     '\r\nSUMMARY:Ethiopian date iCalendar feed'+
     '\r\nDESCRIPTION:Ethiopian date iCalendar feed'+
