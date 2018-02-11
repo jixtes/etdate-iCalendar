@@ -14,17 +14,17 @@ const ethiopicMonths = ['መስከረም', 'ጥቅምት', 'ኅዳር', 'ታኅ�
 const args = process.argv.slice(2);
 const [endYear, endMonth, endDate] = args[1].split('-').map(i => Number.parseInt(i, 10));
 const [startYear, startMonth, startDate] = args[0].split('-').map(i => Number.parseInt(i, 10));
-const icsStartDate = new Date(startYear, startMonth, startDate);
+const icsStartDate = new Date(startYear, (startMonth - 1), startDate);
 // eslint-disable-next-line
-const numberOfDays = differenceInDays(new Date(endYear, endMonth, endDate), new Date(startYear, startMonth, startDate));
+const numberOfDays = differenceInDays(new Date(endYear, (endMonth - 1), endDate), new Date(startYear, (startMonth - 1), startDate));
 
 // creating array according to `numberOfDays`
 // TODO:
 // find a better way to create an array
-const ics = Array.from(new Array(numberOfDays), (_, index) => {
+const ics = Array.from(new Array(numberOfDays + 1), (_, index) => {
   const indexDate = addDays(icsStartDate, index);
   const GCYear = getYear(indexDate);
-  const GCMonth = getMonth(indexDate);
+  const GCMonth = getMonth(indexDate) + 1; // January === 1, December === 12 (JavaScript `Date` is 0 based on month)
   const GCDate = getDate(indexDate);
 
   // `GCMonth` and `GCDate` with preceding `0` to be used on `DTSTART`
@@ -38,7 +38,7 @@ const ics = Array.from(new Array(numberOfDays), (_, index) => {
   // used for `DTEND` as events are set to `all-day`
   const indexDatePlus1Day = addDays(indexDate, 1);
   const GCYearPlus1Day = getYear(indexDatePlus1Day);
-  const GCMonthPlus1Day = getMonth(indexDatePlus1Day);
+  const GCMonthPlus1Day = getMonth(indexDatePlus1Day) + 1;
   const GCDatePlus1Day = getDate(indexDatePlus1Day);
 
   // `GCMonthPlus1Day` and `GCDatePlus1Day` with preceding `0` to be used on `DTEND`
@@ -81,5 +81,5 @@ END:VCALENDAR`, (fsError) => {
     throw fsError;
   }
 
-  console.log('etdate.ics file created');
+  console.log('ETDate.ics file created');
 });
