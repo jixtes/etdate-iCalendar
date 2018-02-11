@@ -1,6 +1,7 @@
 /* eslint no-console: off */
 
 const fs = require('fs');
+const uuidv4 = require('uuid/v4');
 const et = require('ethiopian-date');
 
 const header = `BEGIN:VCALENDAR
@@ -59,7 +60,7 @@ for (var i = 0; i <= number_of_days; i++) {
   '\r\nTRANSP:TRANSPARENT'+
   '\r\nBEGIN:VALARM'+
   '\r\nX-WR-ALARMUID:11AEB7C8-8A2C-4F48-A5B2-0B122007023F'+
-  '\r\nUID:11AEB7C8-8A2C-4F48-A5B2-0B122007023F'+
+  '\r\nUID:'+ uuidv4().toUpperCase() +
   '\r\nTRIGGER;VALUE=DATE-TIME:19760401T000000Z'+
   '\r\nACTION:NONE'+
   '\r\nEND:VALARM'+

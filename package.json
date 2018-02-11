@@ -4,7 +4,8 @@
   "description": "Ethiopian calendar ics file creator",
   "main": "export.js",
   "dependencies": {
-    "ethiopian-date": "^0.0.6"
+    "ethiopian-date": "^0.0.6",
+    "uuid": "^3.2.1"
   },
   "devDependencies": {},
   "scripts": {
