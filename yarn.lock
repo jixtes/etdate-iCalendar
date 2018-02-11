@@ -6,10 +6,6 @@ date-fns@^1.29.0:
   version "1.29.0"
   resolved "https://registry.yarnpkg.com/date-fns/-/date-fns-1.29.0.tgz#12e609cdcb935127311d04d33334e2960a2a54e6"
 
-ethiopian-date@^0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/ethiopian-date/-/ethiopian-date-0.0.6.tgz#78eaad503aa51800274bb990bb8642c2eb3ccec7"
-
 ethiopic-calendar@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ethiopic-calendar/-/ethiopic-calendar-2.0.0.tgz#353e457e8ff093389f6730fb316a4705da12caea"
