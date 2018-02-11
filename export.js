@@ -1,23 +1,30 @@
-const fs = require('fs')
-const header = 'BEGIN:VCALENDAR'+
-    '\r\nPRODID:-//JiXa//Ethiopian Date'+
-    '\r\nVERSION:2.0'+
-    '\r\nCALSCALE:GREGORIAN'+
-    '\r\nMETHOD:PUBLISH'+
-    '\r\nNAME:ETdate'+
-    '\r\nX-WR-CALNAME:ETdate'+
-    '\r\nX-WR-TIMEZONE:Africa/Nairobi'+
-    '\r\nSUMMARY:Ethiopian date iCalendar feed'+
-    '\r\nDESCRIPTION:Ethiopian date iCalendar feed'+
-    '\r\nX-WR-CALDESC:Ethiopian date as events'+
-    '\r\nCOLOR:255:255:255';
+/* eslint no-console: off */
 
-fs.writeFile('etdate.ics',header, function (err) {
-  if (err) throw err;
+const fs = require('fs');
+const et = require('ethiopian-date');
+
+const header = `BEGIN:VCALENDAR
+PRODID:-//JiXa//Ethiopian Date
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+NAME:ETDate
+X-WR-CALNAME:ETDate
+X-WR-TIMEZONE:Africa/Nairobi
+SUMMARY:Ethiopian date iCalendar feed
+DESCRIPTION:Ethiopian date iCalendar feed
+X-WR-CALDESC:Ethiopian date as events
+COLOR:255:255:255`;
+
+fs.writeFile('etdate.ics', header, (error) => {
+  if (error) {
+    throw error;
+  }
+
   console.log('etdate.ics file created');
 });
 
-var et = require('ethiopian-date');
+
 var args = process.argv.slice(2);
 var date1 = new Date(args[0]);
 var date2 = new Date(args[1]);
