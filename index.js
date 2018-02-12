@@ -63,7 +63,7 @@ END:VALARM
 END:VEVENT`;
 });
 
-fs.writeFile('ETDate.ics', `BEGIN:VCALENDAR
+fs.writeFile('etdate.ics', `BEGIN:VCALENDAR
 PRODID:-//JiXa//Ethiopian Date
 VERSION:2.0
 CALSCALE:GREGORIAN

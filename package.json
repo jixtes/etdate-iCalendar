@@ -11,7 +11,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "node index.js 2018-01-01 2018-12-31"
+    "test": "node index.js 2018-01-01 2018-12-31",
+    "build": "node index.js 2018-01-01 2021-12-31"
   },
   "repository": {
     "type": "git",
