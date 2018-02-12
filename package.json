@@ -2,13 +2,17 @@
   "name": "etdate",
   "version": "1.0.0",
   "description": "Ethiopian calendar ics file creator",
-  "main": "export.js",
+  "main": "index.js",
   "dependencies": {
-    "ethiopian-date": "^0.0.6",
+    "date-fns": "^1.29.0",
+    "ethiopic-calendar": "^2.0.0",
+    "geezer": "^1.1.0",
+    "uuid": "^3.2.1"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "node export.js 2015-01-01 2020-01-01"
+    "test": "node index.js 2018-01-01 2018-12-31",
+    "build": "node index.js 2018-01-01 2021-12-31"
   },
   "repository": {
     "type": "git",
