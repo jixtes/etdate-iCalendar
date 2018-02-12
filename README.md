@@ -2,7 +2,7 @@
 
 [Ethiopian Date](https://en.wikipedia.org/wiki/Ethiopian_calendar) integrated into your favorite calendar app
 
-ETDate feed `2015 - 2020`
+ETDate feed `2018 - 2021`
 > [https://raw.githubusercontent.com/jixtes/etdate-iCalendar/master/etdate.ics](https://raw.githubusercontent.com/jixtes/etdate-iCalendar/master/etdate.ics)
 
 ## Google Calendar
