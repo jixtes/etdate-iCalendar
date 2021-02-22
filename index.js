@@ -8,7 +8,6 @@ const getDate = require('date-fns/get_date');
 const getMonth = require('date-fns/get_month');
 const getYear = require('date-fns/get_year');
 const { ge } = require('ethiopic-calendar');
-const geezer = require('geezer');
 
 const ethiopicMonths = ['መስከረም', 'ጥቅምት', 'ኅዳር', 'ታኅሣሥ', 'ጥር', 'የካቲት', 'መጋቢት', 'ሚያዚያ', 'ግንቦት', 'ሰኔ', 'ሐምሌ', 'ነሐሴ', 'ጳጉሜን'];
 const args = process.argv.slice(2);
@@ -49,7 +48,7 @@ const ics = Array.from(new Array(numberOfDays + 1), (_, index) => {
 
   return `BEGIN:VEVENT
 UID:${uuidv4()}
-SUMMARY:${ethiopicMonths[month - 1]} ${day}, ${year}\\n${ethiopicMonths[month - 1]} ${geezer(day)}, ${geezer(year)}\\n${year}-${month0}-${day0}\\n${geezer(year)}-${geezer(month)}-${geezer(day)}
+SUMMARY:${ethiopicMonths[month - 1]} ${day}, ${year}
 DTSTART;VALUE=DATE:${GCYear}${GCMonth0}${GCDate0}
 DTEND;VALUE=DATE:${GCYearPlus1Day}${GCMonthPlus1Day0}${GCDatePlus1Day0}
 DTSTAMP:${GCYear}${GCMonth0}${GCDate0}T000000Z
